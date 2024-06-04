@@ -3,6 +3,7 @@ body, html{
     margin: 0px;
     height: 100%;
     background-color: #E1E1CE;
+    font-family:'Cormorant Garamond',monospace
 }
 
 .page {
