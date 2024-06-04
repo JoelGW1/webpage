@@ -1,62 +1,75 @@
-body,html {
-    background-color: #cfcece;
-    height: 100%;
-    width: 100%;
-    margin: 0px;
+body, html{
     padding: 0px;
-    font-size: 70px;
+    margin: 0px;
+    height: 100%;
+    background-color: #E1E1CE;
 }
 
-.center {
+.page {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height:80%;
-    color: rgb(4, 4, 4);
+    height: 100%;
 }
-
-.dot {
-    color: #9a9a9a;
+.menu {
     display: flex;
-    height: 100px;
-    width: 100px;
-    background-color: #FFFF;
-    border-radius: 50%;
-    display: inline-block;
-    transition: height 0.5s, width 0.5s, opacity 0.5s, font-size 0.5s;
-    align-items: center;
-    display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
 }
 
-.dot:hover {
-    width: 70px;
-    height: 70px;
-    opacity: 70%;
+.menu_item {
+    font-size:13vh;
+    transition: font-size 0.14s,opacity 0.14s;
+    text-decoration: none;
+    color: #443850;
+}
+
+.menu_item:hover {
+    font-size:17vh;
     cursor: pointer;
+    opacity: 20%;
 }
 
-.dot:active {
-    opacity: 30%;
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 100%;
 }
 
-.char1 {
-    transform: rotate(-10deg);
-}
-.char2 {
-    transform: rotate(90deg);
-}
-.char3 {
-    transform: rotate(160deg);
-}
-.char4 {
-    transform: rotate(20deg);
-}
-.char5 {
-    transform: rotate(-40deg);
+.circle {
+    height: 200px;
+    width: 200px;
+    background-color: #2e2a32;
+    border-radius: 50%;
+    transition: height 0.4s, width 0.4s,opacity 0.4s;
+    transition-timing-function: linear;
 }
 
-#aboutme {
-    font-size: 30px;
+.minicircle {
+    height: 20px;
+    width: 20px;
+    background-color: #2e2a32;
+    border-radius: 50%;
+    transition: height 0.4s, width 0.4s,opacity 0.4s;
+    transition-timing-function: linear;
+}
+a {
+    text-decoration: none;
+}
+
+h2 {
+    text-decoration: none;
+    color: #443850;
+}
+.minicircle:hover {
+    height: 170px;
+    width: 170px;
+    cursor: pointer;
+    opacity: 80%;
+}
+
+.circle:hover {
+    height: 170px;
+    width: 170px;
+    cursor: pointer;
+    opacity: 80%
 }
